@@ -67,6 +67,7 @@ body *{
     left: 0;
     z-index: 1;
     transform: translateY(-50%);
+    animation: slide-r .2s;
 }
 .switch span{
     display: block;
@@ -77,8 +78,10 @@ body *{
     border-radius: 999px;
 }
 .light .switch >span:first-child{
-    right: 0;
-    left: initial;
+    animation: slide-l .2s forwards;
+}
+.switch > span:first-child:hover{
+    outline: 8px solid var(--bg-color);
 }
 ul{
     display: flex;
@@ -133,5 +136,21 @@ footer{
     }
     .light{
         --bg-url: url(../assets/bg-desktop-light.jpg) ;
+    }
+}
+@keyframes slide-l {
+    from{
+        left: 0;
+    }
+    to{
+        left: 50%;
+    }
+}
+@keyframes slide-r {
+    from{
+        left: 50%;
+    }
+    to{
+        left: 0;
     }
 }
