@@ -11,7 +11,6 @@ Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnolog
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-
 <br>
 
 <p align="center">
