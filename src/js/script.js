@@ -1,13 +1,12 @@
-const toggleMode = () =>{
-    const body = document.body
+const switchThema = document.querySelector('#thema-page')
+switchThema.addEventListener('click', () =>{
     const img = document.querySelector('.profile img')
+    
+    document.body.classList.toggle("light")
 
-    body.classList.toggle("light")
-
-    if (body.classList.contains('light')) {
+    if (document.body.classList.contains('light')) {
         img.setAttribute('src', './src/assets/mobl.jpg')
     }else{
         img.setAttribute('src', './src/assets/perfil.jpg')
     }
-
-}
+})
